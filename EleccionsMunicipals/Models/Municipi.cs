@@ -12,7 +12,7 @@ namespace EleccionsMunicipals.Models
         public string nomMunicipi { get; set; }
         public int numeroRegidors { get; set; }
         public List<TaulaElectoral> taulaElectoral { get; set; }
-
+        public Municipi() { }
         public Municipi(string nomMunicipi, int numeroRegidors,List<TaulaElectoral> taulaElectoral)
         {
             this.nomMunicipi = nomMunicipi;

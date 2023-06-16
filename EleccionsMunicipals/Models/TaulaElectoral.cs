@@ -14,6 +14,7 @@ namespace EleccionsMunicipals.Models
         public int censTaula { get; set; }
         public ResultatsTaula resultatsTaula { get; set; }
 
+        public TaulaElectoral() { }
        public TaulaElectoral(string nomTaula, int censTaula, ResultatsTaula resultatsTaula)
         {
             this.nomTaula = nomTaula;

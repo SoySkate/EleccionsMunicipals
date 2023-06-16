@@ -11,13 +11,14 @@ namespace EleccionsMunicipals.Models
     {
         public long ID { get; set; }
         public string nomPartit { get; set; }
-        public List<string> candidats { get; set; }
-
-        public PartitPolitic(string nomPartit, List<string> candidats)
+        public List<Candidat> candidats { get; set; }
+        public PartitPolitic() { }
+        public PartitPolitic(string nomPartit, List<Candidat> candidats)
         {
             this.nomPartit = nomPartit;
             this.candidats = candidats;
         }
+        //TODO: Se debe hacer en otro sitio la impresion de la lista.No en la funcion de aqui.
         //public string ImprimirCandidats()
         //{
             

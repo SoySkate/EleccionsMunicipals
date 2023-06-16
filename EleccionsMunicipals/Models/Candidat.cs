@@ -10,6 +10,10 @@ namespace EleccionsMunicipals.Models
     {
         public long ID { get; set; }
         public string nomCandidat { get; set; }
-        
+        public Candidat() { }
+        public Candidat(string nomCandidat)
+        {
+            this.nomCandidat = nomCandidat;
+        }
     }
 }

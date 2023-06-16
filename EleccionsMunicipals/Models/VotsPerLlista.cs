@@ -10,7 +10,7 @@ namespace EleccionsMunicipals.Models
     {
         public long ID { get; set; }
         public int numeroVotsLlista { get; set; }
-
+        public VotsPerLlista() { }
         public VotsPerLlista(int numeroVotsLlista) {
             this.numeroVotsLlista = numeroVotsLlista;
         }
