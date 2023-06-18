@@ -11,13 +11,14 @@ namespace EleccionsMunicipals
     public class EleccionsContext :DbContext
     {
         public DbSet<Municipi> Municipis { get; set; }
-        public DbSet<LlistaPartitMunicipi> PartitsPolitics { get; set; }
+        public DbSet<PartitMunicipi> PartitsPolitics { get; set; }
         public DbSet<TaulaElectoral> TaulesElectorals { get; set; }
         public DbSet<ResultatsTaula> ResultatsTaules { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=FORMACIO1\SQLEXPRESS03;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False; Database=EleccionsMunicipalsDB");
+            optionsBuilder.UseSqlServer(@"Data Source=PCNURS\SQLEXPRESS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False; Database=EleccionsMunicipalsDB");
+            //optionsBuilder.UseSqlServer(@"Data Source=FORMACIO1\SQLEXPRESS03;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False; Database=EleccionsMunicipalsDB");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
