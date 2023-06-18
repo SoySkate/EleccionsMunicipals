@@ -11,6 +11,8 @@ namespace EleccionsMunicipals.Models
         public long ID { get; set; }
         public string nomMunicipi { get; set; }
         public int numeroRegidors { get; set; }
+        //Potser la list de llista partits del municipi té més sentit...?
+        public List<LlistaPartitMunicipi> llistaPartits { get; set; }
         public List<TaulaElectoral> taulaElectoral { get; set; }
         public Municipi() { }
         public Municipi(string nomMunicipi, int numeroRegidors,List<TaulaElectoral> taulaElectoral)

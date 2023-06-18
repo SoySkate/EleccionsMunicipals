@@ -11,7 +11,7 @@ namespace EleccionsMunicipals
     public class EleccionsContext :DbContext
     {
         public DbSet<Municipi> Municipis { get; set; }
-        public DbSet<PartitPolitic> PartitsPolitics { get; set; }
+        public DbSet<LlistaPartitMunicipi> PartitsPolitics { get; set; }
         public DbSet<TaulaElectoral> TaulesElectorals { get; set; }
         public DbSet<ResultatsTaula> ResultatsTaules { get; set; }
 
