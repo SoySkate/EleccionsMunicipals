@@ -23,7 +23,7 @@ namespace EleccionsMunicipals.Models
         }
         public string ImprimirNomICensTaula()
         {
-            return "El nom de la taula es: "+nomTaula+".\nI el cens de la taula es :"+censTaula;
+            return "Nom: "+nomTaula+"  Cens: "+censTaula;
         }
         //desde aqui imprimeixo la llista de resultats taula? o no?
     }

@@ -15,5 +15,9 @@ namespace EleccionsMunicipals.Models
         {
             this.nomCandidat = nomCandidat;
         }
+        public string ImprimirCandidat()
+        {
+            return nomCandidat;
+        }
     }
 }

@@ -4,6 +4,7 @@ using EleccionsMunicipals;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EleccionsMunicipals.Migrations
 {
     [DbContext(typeof(EleccionsContext))]
-    partial class EleccionsContextModelSnapshot : ModelSnapshot
+    [Migration("20230619134103_1test")]
+    partial class _1test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,7 +86,7 @@ namespace EleccionsMunicipals.Migrations
 
                     b.HasIndex("MunicipiID");
 
-                    b.ToTable("PartitsPolitics");
+                    b.ToTable("PartitMunicipi");
                 });
 
             modelBuilder.Entity("EleccionsMunicipals.Models.ResultatsTaula", b =>
@@ -102,7 +105,7 @@ namespace EleccionsMunicipals.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("ResultatsTaules");
+                    b.ToTable("ResultatsTaula");
                 });
 
             modelBuilder.Entity("EleccionsMunicipals.Models.TaulaElectoral", b =>
@@ -132,7 +135,7 @@ namespace EleccionsMunicipals.Migrations
 
                     b.HasIndex("resultatsTaulaID");
 
-                    b.ToTable("TaulesElectorals");
+                    b.ToTable("TaulaElectoral");
                 });
 
             modelBuilder.Entity("EleccionsMunicipals.Models.VotsPerLlista", b =>

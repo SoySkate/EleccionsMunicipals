@@ -115,3 +115,4 @@ C:\Users\Andrew\source\repos\EleccionsMunicipals\EleccionsMunicipals\obj\Debug\n
 C:\Users\Andrew\source\repos\EleccionsMunicipals\EleccionsMunicipals\obj\Debug\net7.0-windows\EleccionsMunicipals.pdb
 C:\Users\Andrew\source\repos\EleccionsMunicipals\EleccionsMunicipals\obj\Debug\net7.0-windows\EleccionsMunicipals.genruntimeconfig.cache
 C:\Users\Andrew\source\repos\EleccionsMunicipals\EleccionsMunicipals\obj\Debug\net7.0-windows\ref\EleccionsMunicipals.dll
+C:\Users\formacio3\source\repos\EleccionsMunicipals\EleccionsMunicipals\obj\Debug\net7.0-windows\EleccionsMunicipals.FormCrearPartitMunicipi.resources

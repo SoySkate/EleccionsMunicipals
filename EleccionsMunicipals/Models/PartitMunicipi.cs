@@ -20,21 +20,6 @@ namespace EleccionsMunicipals.Models
             this.nomPartit = nomPartit;
             this.candidats = candidats;
         }
-        //TODO: Se debe hacer en otro sitio la impresion de la lista.No en la funcion de aqui.
-        //public string ImprimirCandidats()
-        //{
-
-        //    if (candidats.Count != 0) { 
-        //        //MIRAR AQUESTA FUNCIO RARA
-        //        foreach (var candidat in candidats)
-        //        {
-        //           candidat;
-        //        }
-        //    }
-        //}
-        //public string ImprimirNomPartitPolitic()
-        //{
-        //    return nomPartit;
-        //}
+     
     }
 }
